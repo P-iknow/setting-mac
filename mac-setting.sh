@@ -8,6 +8,9 @@ brew tap homebrew/cask-versions
 ## Update Homebrew
 brew update
 
+## Install Typora
+brew cask install typora
+
 ## Install Iterm2
 brew cask install iterm2
 
