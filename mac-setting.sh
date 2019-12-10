@@ -1,6 +1,4 @@
-```
 #!/bin/bash
-
 
 ## Install Homebrew & Cask
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -13,15 +11,6 @@ brew cask install typora
 
 ## Install Iterm2
 brew cask install iterm2
-
-## Install neovim
-brew install neovim
-brew tap caskroom/fonts
-brew cask install font-hack-nerd-font
-
-## Install Spacevim project(vim plugins set)
-curl -sLf https://spacevim.org/install.sh | bash
-
 
 ## zsh & zsh plugin
 brew install zsh zsh-completions
@@ -36,12 +25,18 @@ brew install fasd
 ## install Oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+## Install neovim
+brew install neovim
+brew tap caskroom/fonts
+brew cask install font-hack-nerd-font
+
+## Install Spacevim project(vim plugins set)
+curl -sLf https://spacevim.org/install.sh | bash
+
 ## Install Node
 brew install nvm
 mkdir ~/.nvm
 brew install yarn
-
-
 
 ## Install Python3
 brew install python3
@@ -53,7 +48,6 @@ xcode-select --install
 brew cask install google-chrome
 brew cask install firefox
 
-## Install Browsers (Google Chrome, Firefox)
 
 ## Install Virtualization Tools (Docker)
 brew cask install docker
@@ -66,12 +60,14 @@ brew cast install webstorm
 cat vscode-extensions.txt | xargs -L1 code --install-extension
 
 
-## Install Developer utilities (Spectacle, Tree, httpie)
-brew cask install spectacle
+## Install Developer utilities (Tree, httpie)
 brew install tree
 brew install httpie
 
+
 ## Install Productivity Tools (Slack, SourceTree, Spectacle, karabiner-elements, gureumkim)
+brew cask install spectacle
+brew cask install notion
 brew cask install slack
 brew cask install sourcetree
 brew cask install spectacle
@@ -99,4 +95,3 @@ git config --global alias.br branch
 git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 ## Source zshrc
 source ~/.zshrc
-```
