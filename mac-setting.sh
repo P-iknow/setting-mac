@@ -14,6 +14,8 @@ brew cask install iterm2
 
 ## zsh & zsh plugin
 brew install zsh zsh-completions
+## install Oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 # zsh-autosuggestions
@@ -22,8 +24,7 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 brew install autojump
 # fasd
 brew install fasd
-## install Oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 
 ## Install neovim
 brew install neovim
@@ -55,9 +56,6 @@ brew cask install docker
 ## Install IDEs (webstorm, Visual Studio Code)
 brew cask install visual-studio-code
 brew cast install webstorm
-
-# Install important Visual Studio Code Extensions
-cat vscode-extensions.txt | xargs -L1 code --install-extension
 
 
 ## Install Developer utilities (Tree, httpie)

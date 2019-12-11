@@ -16,7 +16,6 @@ ZSH_THEME="agnoster"
 plugins=(
   git
   autojump
-  zsh-completions
   zsh-syntax-highlighting
   zsh-autosuggestions
   fasd
